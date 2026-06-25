@@ -1,0 +1,217 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1113pt" height="368pt" viewBox="0.00 0.00 1112.63 368.00">
+<g id="graph0" class="graph" transform="translate(63.8999061896439,341.10458887520167) scale(0.8705505632961241)" data-name="G">
+
+<polygon fill="white" stroke="none" points="-4,4 -4,-364 1108.63,-364 1108.63,4 -4,4" style=""/>
+<!-- data.aws_ami.ubuntu -->
+<g id="node1" class="node" pointer-events="visible" data-name="data.aws_ami.ubuntu">
+
+<polygon fill="none" stroke="black" points="493.83,-198 358.88,-198 358.88,-162 493.83,-162 493.83,-198" style=""/>
+<text text-anchor="middle" x="426.35" y="-175.8" font-family="sans-serif" font-size="14.00" style="">data.aws_ami.ubuntu</text>
+</g>
+<!-- aws_instance.db -->
+<g id="node2" class="node" pointer-events="visible" data-name="aws_instance.db">
+
+<polygon fill="none" stroke="black" points="729.62,-198 621.34,-198 621.34,-162 729.62,-162 729.62,-198" style=""/>
+<text text-anchor="middle" x="675.48" y="-175.8" font-family="sans-serif" font-size="14.00" style="">aws_instance.db</text>
+</g>
+<!-- aws_instance.db&#45;&gt;data.aws_ami.ubuntu -->
+<g id="edge1" class="edge" data-name="aws_instance.db-&gt;data.aws_ami.ubuntu">
+
+<path fill="none" stroke="black" d="M620.86,-180C587.15,-180 543.09,-180 505.53,-180" style=""/>
+<polygon fill="black" stroke="black" points="505.62,-176.5 495.62,-180 505.62,-183.5 505.62,-176.5" style=""/>
+</g>
+<!-- aws_key_pair.deployer -->
+<g id="node5" class="node" pointer-events="visible" data-name="aws_key_pair.deployer">
+
+<polygon fill="none" stroke="black" points="499.59,-306 353.12,-306 353.12,-270 499.59,-270 499.59,-306" style=""/>
+<text text-anchor="middle" x="426.35" y="-283.8" font-family="sans-serif" font-size="14.00" style="">aws_key_pair.deployer</text>
+</g>
+<!-- aws_instance.db&#45;&gt;aws_key_pair.deployer -->
+<g id="edge2" class="edge" data-name="aws_instance.db-&gt;aws_key_pair.deployer">
+
+<path fill="none" stroke="black" d="M640.29,-198.47C607.3,-215.88 555.66,-242.06 509.2,-261 505.19,-262.64 501.03,-264.25 496.82,-265.82" style=""/>
+<polygon fill="black" stroke="black" points="495.91,-262.43 487.7,-269.13 498.3,-269.01 495.91,-262.43" style=""/>
+</g>
+<!-- aws_security_group.db_sg -->
+<g id="node12" class="node" pointer-events="visible" data-name="aws_security_group.db_sg">
+
+<polygon fill="none" stroke="black" points="509.05,-360 343.65,-360 343.65,-324 509.05,-324 509.05,-360" style=""/>
+<text text-anchor="middle" x="426.35" y="-337.8" font-family="sans-serif" font-size="14.00" style="">aws_security_group.db_sg</text>
+</g>
+<!-- aws_instance.db&#45;&gt;aws_security_group.db_sg -->
+<g id="edge3" class="edge" data-name="aws_instance.db-&gt;aws_security_group.db_sg">
+
+<path fill="none" stroke="black" d="M656.79,-198.25C628.2,-226.82 568.97,-282.21 509.2,-315 506.68,-316.39 504.07,-317.72 501.41,-318.99" style=""/>
+<polygon fill="black" stroke="black" points="500.02,-315.78 492.29,-323.02 502.85,-322.18 500.02,-315.78" style=""/>
+</g>
+<!-- aws_subnet.public -->
+<g id="node14" class="node" pointer-events="visible" data-name="aws_subnet.public">
+
+<polygon fill="none" stroke="black" points="486.17,-144 366.54,-144 366.54,-108 486.17,-108 486.17,-144" style=""/>
+<text text-anchor="middle" x="426.35" y="-121.8" font-family="sans-serif" font-size="14.00" style="">aws_subnet.public</text>
+</g>
+<!-- aws_instance.db&#45;&gt;aws_subnet.public -->
+<g id="edge4" class="edge" data-name="aws_instance.db-&gt;aws_subnet.public">
+
+<path fill="none" stroke="black" d="M620.97,-169.07C597.67,-164.24 570.06,-158.44 545.2,-153 529.86,-149.64 513.42,-145.94 497.83,-142.38" style=""/>
+<polygon fill="black" stroke="black" points="498.66,-138.98 488.13,-140.16 497.09,-145.8 498.66,-138.98" style=""/>
+</g>
+<!-- aws_instance.web -->
+<g id="node3" class="node" pointer-events="visible" data-name="aws_instance.web">
+
+<polygon fill="none" stroke="black" points="1032.16,-144 914.23,-144 914.23,-108 1032.16,-108 1032.16,-144" style=""/>
+<text text-anchor="middle" x="973.19" y="-121.8" font-family="sans-serif" font-size="14.00" style="">aws_instance.web</text>
+</g>
+<!-- aws_instance.web&#45;&gt;aws_instance.db -->
+<g id="edge5" class="edge" data-name="aws_instance.web-&gt;aws_instance.db">
+
+<path fill="none" stroke="black" d="M913.77,-136.67C864.01,-145.76 792.6,-158.8 741.13,-168.19" style=""/>
+<polygon fill="black" stroke="black" points="740.51,-164.75 731.3,-169.99 741.77,-171.64 740.51,-164.75" style=""/>
+</g>
+<!-- aws_s3_object.map_image -->
+<g id="node11" class="node" pointer-events="visible" data-name="aws_s3_object.map_image">
+
+<polygon fill="none" stroke="black" points="759.22,-90 591.74,-90 591.74,-54 759.22,-54 759.22,-90" style=""/>
+<text text-anchor="middle" x="675.48" y="-67.8" font-family="sans-serif" font-size="14.00" style="">aws_s3_object.map_image</text>
+</g>
+<!-- aws_instance.web&#45;&gt;aws_s3_object.map_image -->
+<g id="edge6" class="edge" data-name="aws_instance.web-&gt;aws_s3_object.map_image">
+
+<path fill="none" stroke="black" d="M913.77,-115.33C873.02,-107.89 817.75,-97.8 770.81,-89.23" style=""/>
+<polygon fill="black" stroke="black" points="771.65,-85.82 761.18,-87.47 770.39,-92.71 771.65,-85.82" style=""/>
+</g>
+<!-- aws_internet_gateway.gw -->
+<g id="node4" class="node" pointer-events="visible" data-name="aws_internet_gateway.gw">
+
+<polygon fill="none" stroke="black" points="300.78,-94 139.21,-94 139.21,-58 300.78,-58 300.78,-94" style=""/>
+<text text-anchor="middle" x="219.99" y="-71.8" font-family="sans-serif" font-size="14.00" style="">aws_internet_gateway.gw</text>
+</g>
+<!-- aws_vpc.main -->
+<g id="node15" class="node" pointer-events="visible" data-name="aws_vpc.main">
+
+<polygon fill="none" stroke="black" points="96.72,-144 -0.24,-144 -0.24,-108 96.72,-108 96.72,-144" style=""/>
+<text text-anchor="middle" x="48.24" y="-121.8" font-family="sans-serif" font-size="14.00" style="">aws_vpc.main</text>
+</g>
+<!-- aws_internet_gateway.gw&#45;&gt;aws_vpc.main -->
+<g id="edge7" class="edge" data-name="aws_internet_gateway.gw-&gt;aws_vpc.main">
+
+<path fill="none" stroke="black" d="M156.26,-94.48C140.38,-99.15 123.38,-104.16 107.72,-108.78" style=""/>
+<polygon fill="black" stroke="black" points="107.17,-105.29 98.57,-111.47 109.15,-112 107.17,-105.29" style=""/>
+</g>
+<!-- tls_private_key.key -->
+<g id="node17" class="node" pointer-events="visible" data-name="tls_private_key.key">
+
+<polygon fill="none" stroke="black" points="283.02,-279 156.97,-279 156.97,-243 283.02,-243 283.02,-279" style=""/>
+<text text-anchor="middle" x="219.99" y="-256.8" font-family="sans-serif" font-size="14.00" style="">tls_private_key.key</text>
+</g>
+<!-- aws_key_pair.deployer&#45;&gt;tls_private_key.key -->
+<g id="edge8" class="edge" data-name="aws_key_pair.deployer-&gt;tls_private_key.key">
+
+<path fill="none" stroke="black" d="M352.73,-278.4C333.83,-275.91 313.45,-273.22 294.51,-270.71" style=""/>
+<polygon fill="black" stroke="black" points="295.1,-267.26 284.73,-269.42 294.19,-274.2 295.1,-267.26" style=""/>
+</g>
+<!-- aws_route_table.rt -->
+<g id="node6" class="node" pointer-events="visible" data-name="aws_route_table.rt">
+
+<polygon fill="none" stroke="black" points="486.15,-90 366.56,-90 366.56,-54 486.15,-54 486.15,-90" style=""/>
+<text text-anchor="middle" x="426.35" y="-67.8" font-family="sans-serif" font-size="14.00" style="">aws_route_table.rt</text>
+</g>
+<!-- aws_route_table.rt&#45;&gt;aws_internet_gateway.gw -->
+<g id="edge9" class="edge" data-name="aws_route_table.rt-&gt;aws_internet_gateway.gw">
+
+<path fill="none" stroke="black" d="M366.24,-73.16C349.45,-73.49 330.76,-73.85 312.53,-74.21" style=""/>
+<polygon fill="black" stroke="black" points="312.7,-70.7 302.77,-74.4 312.84,-77.7 312.7,-70.7" style=""/>
+</g>
+<!-- aws_route_table_association.a -->
+<g id="node7" class="node" pointer-events="visible" data-name="aws_route_table_association.a">
+
+<polygon fill="none" stroke="black" points="768.64,-144 582.31,-144 582.31,-108 768.64,-108 768.64,-144" style=""/>
+<text text-anchor="middle" x="675.48" y="-121.8" font-family="sans-serif" font-size="14.00" style="">aws_route_table_association.a</text>
+</g>
+<!-- aws_route_table_association.a&#45;&gt;aws_route_table.rt -->
+<g id="edge10" class="edge" data-name="aws_route_table_association.a-&gt;aws_route_table.rt">
+
+<path fill="none" stroke="black" d="M585.07,-107.56C571.7,-104.74 558.08,-101.82 545.2,-99 529.63,-95.59 512.92,-91.83 497.12,-88.22" style=""/>
+<polygon fill="black" stroke="black" points="498.36,-84.91 487.83,-86.09 496.79,-91.73 498.36,-84.91" style=""/>
+</g>
+<!-- aws_route_table_association.a&#45;&gt;aws_subnet.public -->
+<g id="edge11" class="edge" data-name="aws_route_table_association.a-&gt;aws_subnet.public">
+
+<path fill="none" stroke="black" d="M582.11,-126C554.16,-126 523.94,-126 497.68,-126" style=""/>
+<polygon fill="black" stroke="black" points="497.82,-122.5 487.82,-126 497.82,-129.5 497.82,-122.5" style=""/>
+</g>
+<!-- aws_s3_bucket.assets -->
+<g id="node8" class="node" pointer-events="visible" data-name="aws_s3_bucket.assets">
+
+<polygon fill="none" stroke="black" points="495.05,-36 357.65,-36 357.65,0 495.05,0 495.05,-36" style=""/>
+<text text-anchor="middle" x="426.35" y="-13.8" font-family="sans-serif" font-size="14.00" style="">aws_s3_bucket.assets</text>
+</g>
+<!-- aws_s3_bucket_policy.allow_public_access -->
+<g id="node9" class="node" pointer-events="visible" data-name="aws_s3_bucket_policy.allow_public_access">
+
+<polygon fill="none" stroke="black" points="1104.57,-36 841.81,-36 841.81,0 1104.57,0 1104.57,-36" style=""/>
+<text text-anchor="middle" x="973.19" y="-13.8" font-family="sans-serif" font-size="14.00" style="">aws_s3_bucket_policy.allow_public_access</text>
+</g>
+<!-- aws_s3_bucket_public_access_block.assets -->
+<g id="node10" class="node" pointer-events="visible" data-name="aws_s3_bucket_public_access_block.assets">
+
+<polygon fill="none" stroke="black" points="805.53,-36 545.43,-36 545.43,0 805.53,0 805.53,-36" style=""/>
+<text text-anchor="middle" x="675.48" y="-13.8" font-family="sans-serif" font-size="14.00" style="">aws_s3_bucket_public_access_block.assets</text>
+</g>
+<!-- aws_s3_bucket_policy.allow_public_access&#45;&gt;aws_s3_bucket_public_access_block.assets -->
+<g id="edge12" class="edge" data-name="aws_s3_bucket_policy.allow_public_access-&gt;aws_s3_bucket_public_access_block.assets">
+
+<path fill="none" stroke="black" d="M841.63,-18C833.53,-18 825.36,-18 817.22,-18" style=""/>
+<polygon fill="black" stroke="black" points="817.26,-14.5 807.26,-18 817.26,-21.5 817.26,-14.5" style=""/>
+</g>
+<!-- aws_s3_bucket_public_access_block.assets&#45;&gt;aws_s3_bucket.assets -->
+<g id="edge13" class="edge" data-name="aws_s3_bucket_public_access_block.assets-&gt;aws_s3_bucket.assets">
+
+<path fill="none" stroke="black" d="M545.13,-18C531.98,-18 518.93,-18 506.56,-18" style=""/>
+<polygon fill="black" stroke="black" points="506.92,-14.5 496.92,-18 506.92,-21.5 506.92,-14.5" style=""/>
+</g>
+<!-- aws_s3_object.map_image&#45;&gt;aws_s3_bucket.assets -->
+<g id="edge14" class="edge" data-name="aws_s3_object.map_image-&gt;aws_s3_bucket.assets">
+
+<path fill="none" stroke="black" d="M591.33,-54.88C575.98,-51.65 560.1,-48.26 545.2,-45 532.75,-42.27 519.58,-39.32 506.73,-36.41" style=""/>
+<polygon fill="black" stroke="black" points="507.55,-33 497.02,-34.19 505.99,-39.83 507.55,-33" style=""/>
+</g>
+<!-- aws_security_group.web_sg -->
+<g id="node13" class="node" pointer-events="visible" data-name="aws_security_group.web_sg">
+
+<polygon fill="none" stroke="black" points="307.52,-346 132.47,-346 132.47,-310 307.52,-310 307.52,-346" style=""/>
+<text text-anchor="middle" x="219.99" y="-323.8" font-family="sans-serif" font-size="14.00" style="">aws_security_group.web_sg</text>
+</g>
+<!-- aws_security_group.db_sg&#45;&gt;aws_security_group.web_sg -->
+<g id="edge15" class="edge" data-name="aws_security_group.db_sg-&gt;aws_security_group.web_sg">
+
+<path fill="none" stroke="black" d="M343.41,-336.39C335.48,-335.84 327.39,-335.29 319.33,-334.74" style=""/>
+<polygon fill="black" stroke="black" points="319.7,-331.25 309.48,-334.06 319.22,-338.24 319.7,-331.25" style=""/>
+</g>
+<!-- aws_security_group.web_sg&#45;&gt;aws_vpc.main -->
+<g id="edge16" class="edge" data-name="aws_security_group.web_sg-&gt;aws_vpc.main">
+
+<path fill="none" stroke="black" d="M164.74,-309.62C153.16,-303.95 141.67,-296.82 132.48,-288 93.36,-250.47 69.3,-190.55 57.68,-155.06" style=""/>
+<polygon fill="black" stroke="black" points="61.14,-154.39 54.79,-145.9 54.46,-156.49 61.14,-154.39" style=""/>
+</g>
+<!-- aws_subnet.public&#45;&gt;aws_vpc.main -->
+<g id="edge17" class="edge" data-name="aws_subnet.public-&gt;aws_vpc.main">
+
+<path fill="none" stroke="black" d="M366.17,-126C295.72,-126 178.78,-126 108.36,-126" style=""/>
+<polygon fill="black" stroke="black" points="108.56,-122.5 98.56,-126 108.56,-129.5 108.56,-122.5" style=""/>
+</g>
+<!-- local_file.private_key -->
+<g id="node16" class="node" pointer-events="visible" data-name="local_file.private_key">
+
+<polygon fill="none" stroke="black" points="495.8,-252 356.91,-252 356.91,-216 495.8,-216 495.8,-252" style=""/>
+<text text-anchor="middle" x="426.35" y="-229.8" font-family="sans-serif" font-size="14.00" style="">local_file.private_key</text>
+</g>
+<!-- local_file.private_key&#45;&gt;tls_private_key.key -->
+<g id="edge18" class="edge" data-name="local_file.private_key-&gt;tls_private_key.key">
+
+<path fill="none" stroke="black" d="M356.45,-243.1C336.6,-245.73 314.86,-248.6 294.73,-251.26" style=""/>
+<polygon fill="black" stroke="black" points="294.37,-247.78 284.91,-252.56 295.28,-254.71 294.37,-247.78" style=""/>
+</g>
+</g>
+</svg>
